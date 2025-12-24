@@ -11,4 +11,5 @@ exclude =
     */settings.py
     */admin.py
     */tests.py
+    */migrations
 max-complexity = 10
