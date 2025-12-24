@@ -1,3 +1,12 @@
 from django.db import models
 
-# Create your models here.
+class Movie(models.Model):
+    title = models.CharField(max_length=100, blank=True, default="")
+    description = models.TextField(blank=True, default="")
+    duration = models.PositiveIntegerField()
+
+    class Meta:
+        ordering=["title"]
+
+    def __str__(self):
+        return f"{self.name} duration: {self.duration}"
